@@ -117,6 +117,20 @@ function decode (xablau) {
 }
 
 // Desafio 10 - Crie a função techList
+function techList(t, n) {
+  let arr = [];
+  if (t.length === 0) {
+    return [];
+  }
+  let tec = t.sort();
+  for (let i = 0; i < t.length; i += 1) {
+    arr.push({
+      tech: tec[i],
+      name: n,
+    });
+  }
+  return arr;
+}
 
 // Não modifique essas linhas
 module.exports = {
