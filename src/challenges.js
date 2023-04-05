@@ -17,15 +17,31 @@ const splitSentence = (sentence) => sentence.split(' ');
   //  return concat;
   //  }
 // const concatName = (array) =>  
-const footballPoints = (wins, ties) => wins * 3 + ties;
+
 
 // {
 //   return ((wins * 3) + (ties))
 // }
 
 // Desafio 4 - Crie a função footballPoints
+const footballPoints = (wins, ties) => wins * 3 + ties;
 
 // Desafio 5 - Crie a função highestCount
+function highestCount (array) {
+  let higher = array[0];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > higher) {
+      higher = array[index]
+    }
+  }
+  let contador = 0;
+  for (let secondIndex = 0; secondIndex < array.length; secondIndex +=1) {
+    if (higher === array[secondIndex]) {
+      contador += 1;
+    }
+  }
+  return contador;
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
