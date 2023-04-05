@@ -7,6 +7,7 @@ const compareTrue = (girafa, elefante) => (girafa === true && elefante ===true) 
 //  }
 
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = (sentence) => sentence.split(' ');
 
 // Desafio 3 - Crie a função concatName
 
