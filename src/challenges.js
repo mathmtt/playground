@@ -1,5 +1,5 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (girafa, elefante) => (girafa === true && elefante ===true) ? true : false;
+const compareTrue = (matheus, gustavo) => (matheus === true && gustavo ===true) ? true : false;
 
 //    if (girafa === true && elefante === true) {
 //     return true;
@@ -8,6 +8,7 @@ const compareTrue = (girafa, elefante) => (girafa === true && elefante ===true) 
 
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (sentence) => sentence.split(' ');
+console.log(splitSentence("Go Trybe"))
 
 // Desafio 3 - Crie a função concatName
  function concatName (array) {
@@ -44,6 +45,23 @@ function highestCount (array) {
 }
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+function calcTriangleArea (base, altura) {
+  return ((base * altura) / 2);
+}
+function calcRectangleArea (base, altura) {
+  return (base * altura);
+}
+function calcAllAreas (base, altura, form) {
+  if (form === "triângulo") {
+    return `O valor da área do ${form} é de: ${calcTriangleArea(base, altura)}`;
+  }
+  else if (form === "retângulo"){
+    return `O valor da área do ${form} é de: ${calcRectangleArea(base, altura)}`;
+  }
+  else{
+    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`
+  }
+}
 
 // Desafio 7 - Crie a função catAndMouse
 
