@@ -93,6 +93,28 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9 - Crie a função encode e a função decode
+function encode (xablau) {
+  let barabam = xablau;
+  barabam = barabam.split("a").join("1");
+  barabam = barabam.split("e").join("2");
+  barabam = barabam.split("i").join("3");
+  barabam = barabam.split("o").join("4");
+  barabam = barabam.split("u").join("5");
+  
+  // barabam = barabam.replace(/e/g, "2"); poderia usar esse metodo tbm!!!
+
+  return barabam;
+}
+function decode (xablau) {
+  let barabam = xablau;
+  barabam = barabam.split("1").join("a");
+  barabam = barabam.split("2").join("e");
+  barabam = barabam.split("3").join("i");
+  barabam = barabam.split("4").join("o");
+  barabam = barabam.split("5").join("u");
+
+  return barabam; 
+}
 
 // Desafio 10 - Crie a função techList
 
