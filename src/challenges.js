@@ -10,6 +10,14 @@ const compareTrue = (girafa, elefante) => (girafa === true && elefante ===true) 
 const splitSentence = (sentence) => sentence.split(' ');
 
 // Desafio 3 - Crie a função concatName
+ function concatName (array) {
+   let myArrey = array;
+  return `${myArrey[(myArrey.length - 1)]}, ${myArrey[0]}`;
+ }
+  //  return concat;
+  //  }
+// const concatName = (array) =>  
+
 
 // Desafio 4 - Crie a função footballPoints
 
