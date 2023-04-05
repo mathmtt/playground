@@ -1,4 +1,10 @@
 // Desafio 1 - Crie a função compareTrue
+const compareTrue = (girafa, elefante) => (girafa === true && elefante ===true) ? true : false;
+
+//    if (girafa === true && elefante === true) {
+//     return true;
+//    } else {return false;}
+//  }
 
 // Desafio 2 - Crie a função splitSentence
 
