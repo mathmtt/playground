@@ -64,13 +64,14 @@ function calcAllAreas (base, altura, form) {
 }
 
 // Desafio 7 - Crie a função catAndMouse
+
 function catAndMouse(mouse, cat1, cat2) {
-  if (math.abs(cat1 - mouse) < math.abs(cat2 - mouse)) {
-    return "cat1"
-  } else if (math.abs(cat1 - mouse) > math.abs(cat2 - mouse)) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return "cat1";
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
     return "cat2";
   } else {
-    return "os gatos trombam e o rato foge"
+    return "os gatos trombam e o rato foge";
   } 
 }
 
