@@ -17,7 +17,11 @@ const splitSentence = (sentence) => sentence.split(' ');
   //  return concat;
   //  }
 // const concatName = (array) =>  
+const footballPoints = (wins, ties) => wins * 3 + ties;
 
+// {
+//   return ((wins * 3) + (ties))
+// }
 
 // Desafio 4 - Crie a função footballPoints
 
