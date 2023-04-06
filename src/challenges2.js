@@ -15,7 +15,7 @@
 function generatePhoneNumber (array) {
   let r = 0;
   let a = 0;
-  let co = 0;
+  let cont = 0;
   let l = 3;
   for (let i = 0; i < array.length; i += 1) {
     a = array[i];
@@ -42,7 +42,17 @@ return phoneNumber;}
 
 
 // Desafio 12 -  Crie a função triangleCheck
-
+function triangleCheck(lA, lB, lC) {
+  let triangleform = false;
+  if (lA < lB + lC && lA > Math.abs(lB) - Math.abs(lC)) {
+    if (lB < lA + lC && lB > Math.abs(lA) - Math.abs(lC)) {
+      if (lC < lA + lB && lC > Math.abs(lA) - Math.abs(lB)) {
+        triangleform = true;
+      }
+    }
+  }
+  return triangleform
+}
 // Desafio 13 - Crie a função hydrate
 
 /* eslint no-undef: 0 */
