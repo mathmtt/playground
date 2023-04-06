@@ -54,7 +54,20 @@ function triangleCheck(lA, lB, lC) {
   return triangleform
 }
 // Desafio 13 - Crie a função hydrate
-
+const hydrate = (liquido) => {
+  meuLiquido = liquido;
+  find = /\d+/g;
+  arrayNumero = (meuLiquido).match(find);
+  numeroTotal = 0 
+  for (i = 0; i < arrayNumero.length; i +=1) {
+    numeroTotal += (arrayNumero[i]*1);
+  }
+  if (numeroTotal == 1) {
+    return(numeroTotal + ' ' + 'copo de água');
+  } else {
+    return (numeroTotal + ' ' + 'copos de água')
+  }
+}
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
