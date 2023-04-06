@@ -1,5 +1,5 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (matheus, gustavo) => (matheus === true && gustavo ===true) ? true : false;
+const compareTrue = (matheus, gustavo) => (matheus && gustavo ===true) ? true : false;
 
 //    if (girafa === true && elefante === true) {
 //     return true;
