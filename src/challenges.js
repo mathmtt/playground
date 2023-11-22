@@ -1,5 +1,5 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (matheus, gustavo) => (matheus && gustavo ===true) ? true : false;
+const compareTrue = (matheus, gustavo) => (matheus && gustavo === true) ? true : false;
 
 //    if (girafa === true && elefante === true) {
 //     return true;
@@ -8,10 +8,10 @@ const compareTrue = (matheus, gustavo) => (matheus && gustavo ===true) ? true : 
 
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (sentence) => sentence.split(' ');
-console.log(splitSentence("Go Trybe"))
+console.log(splitSentence('Go Trybe'));
 
 // Desafio 3 - Crie a função concatName
- function concatName (array) {
+ function concatName (array){
    let myArrey = array;
   return `${myArrey[(myArrey.length - 1)]}, ${myArrey[0]}`;
  }
@@ -28,16 +28,16 @@ console.log(splitSentence("Go Trybe"))
 const footballPoints = (wins, ties) => wins * 3 + ties;
 
 // Desafio 5 - Crie a função highestCount
-function highestCount (array) {
+function highestCount (array){
   let higher = array[0];
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] > higher) {
-      higher = array[index]
+  for (let index = 0; index < array.length; index += 1){
+    if (array[index] > higher){
+      higher = array[index];
     }
   }
   let contador = 0;
-  for (let secondIndex = 0; secondIndex < array.length; secondIndex +=1) {
-    if (higher === array[secondIndex]) {
+  for (let secondIndex = 0; secondIndex < array.length; secondIndex +=1){
+    if (higher === array[secondIndex]){
       contador += 1;
     }
   }
@@ -45,13 +45,13 @@ function highestCount (array) {
 }
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
-function calcTriangleArea (base, altura) {
+function calcTriangleArea (base, altura){
   return ((base * altura) / 2);
 }
-function calcRectangleArea (base, altura) {
+function calcRectangleArea (base, altura){
   return (base * altura);
 }
-function calcAllAreas (base, altura, form) {
+function calcAllAreas (base, altura, form){
   if (form === "triângulo") {
     return `O valor da área do ${form} é de: ${calcTriangleArea(base, altura)}`;
   }
@@ -59,16 +59,16 @@ function calcAllAreas (base, altura, form) {
     return `O valor da área do ${form} é de: ${calcRectangleArea(base, altura)}`;
   }
   else{
-    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`
+    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
   }
 }
 
 // Desafio 7 - Crie a função catAndMouse
 
-function catAndMouse(mouse, cat1, cat2) {
-  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+function catAndMouse(mouse, cat1, cat2){
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
     return "cat1";
-  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)){
     return "cat2";
   } else {
     return "os gatos trombam e o rato foge";
@@ -76,24 +76,24 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8 - Crie a função fizzBuzz
-function fizzBuzz(array) {
+function fizzBuzz(array){
   let arr = [];
   for (let index = 0; index < array.length; index+= 1) {
-    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0){
       arr.push("fizzBuzz");
-    } else if (array[index] % 5 === 0) {
+    } else if (array[index] % 5 === 0){
       arr.push("buzz"); 
-    } else if (array[index] % 3 === 0) {
+    } else if (array[index] % 3 === 0){
       arr.push("fizz");
     } else {
-      arr.push("bug!")
+      arr.push("bug!");
     }
   }
   return arr;
 }
 
 // Desafio 9 - Crie a função encode e a função decode
-function encode (xablau) {
+function encode (xablau){
   let barabam = xablau;
   barabam = barabam.split("a").join("1");
   barabam = barabam.split("e").join("2");
@@ -105,7 +105,7 @@ function encode (xablau) {
 
   return barabam;
 }
-function decode (xablau) {
+function decode (xablau){
   let barabam = xablau;
   barabam = barabam.split("1").join("a");
   barabam = barabam.split("2").join("e");
@@ -117,13 +117,13 @@ function decode (xablau) {
 }
 
 // Desafio 10 - Crie a função techList
-function techList(t, n) {
+function techList(t, n){
   let arr = [];
-  if (t.length === 0) {
+  if (t.length === 0){
     return [];
   }
   let tec = t.sort();
-  for (let i = 0; i < t.length; i += 1) {
+  for (let i = 0; i < t.length; i += 1){
     arr.push({
       tech: tec[i],
       name: n,
